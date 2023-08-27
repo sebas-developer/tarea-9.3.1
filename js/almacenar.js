@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const contenedor = document.getElementById("contenedor");
   
     // Cargar ítems almacenados al cargar la página
-    const storedItems = JSON.parse(localStorage.getItem("items")) || [];
+    let storedItems = JSON.parse(localStorage.getItem("items")) || [];
     renderItems(storedItems);
   
     addButton.addEventListener("click", function () {
