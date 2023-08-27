@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     clearButton.addEventListener("click", function () {
       localStorage.removeItem("items");
+      storedItems = [];
       renderItems([]);
     });
 
